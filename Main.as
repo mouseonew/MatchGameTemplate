@@ -76,11 +76,8 @@ function SuperMC(){return{
 		}
 	},
 	
-	setEndLabelFrameFunc:function(func){
-		this.endLabelFrameFunc=func;
-	},
-	
-	gotoAndPlay:function(label){
+	gotoAndPlay:function(label,endLabelFrameFunc){
+		this.endLabelFrameFunc=endLabelFrameFunc;
 		this.mc.gotoAndPlay(label);
 	},
 	
